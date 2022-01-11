@@ -191,8 +191,8 @@ function App() {
     },
   ];
   const [data, setdata] = useState('')
-  const cardToSave = (islam) => {
-    setdata([...data,islam])
+  const cardToSave = (u) => {
+    setdata([...data,u])
     console.log(data);
   }
   return (

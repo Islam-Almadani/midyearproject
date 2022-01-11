@@ -8,7 +8,9 @@ class Save extends Component {
     }
     render(){
         return(
-            this.props.name.map((it) => {
+            <>
+            <h1>Saved Universyies</h1>
+            { this.props.name && this.props.name.map((it) => {
                 return (
                     <div className='UniDiv'>
                         <img src={it.url} className="image"></img>
@@ -16,7 +18,8 @@ class Save extends Component {
                         <button className='details_link' onClick={() => this.props.name1(it)}>Save</button>
                     </div>
                 )
-            })
+            })}</>
+            
             
         )
     }
