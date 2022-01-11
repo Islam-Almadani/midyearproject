@@ -15,7 +15,7 @@ function Card(props) {
                     <li className="details_li"> description : {location.state.description}</li>
                 </ul>
                 <a href={location.state.web_pages[0]} target="_blank" className='details_link' rel="noreferrer" >University web page</a>
-                <button className='details_link' onClick={props.name}>Save</button>
+
             </div>
         </div>
     )

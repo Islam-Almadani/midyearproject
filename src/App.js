@@ -9,9 +9,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { Component } from 'react';
 import Card from './components/Card';
 import { useState } from "react";
+import Signup from './components/Signup';
 function App() {
   const universities = [
     {
@@ -192,18 +192,19 @@ function App() {
   ];
   const [data, setdata] = useState('')
   const cardToSave = (u) => {
-    setdata([...data,u])
+    setdata([...data, u])
     console.log(data);
   }
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/Home' element={<Home name={universities} name1 = {cardToSave}/>} />
+        <Route path='/Home' element={<Home name={universities} name1={cardToSave} />} />
         <Route path='/Save' element={<Save name={data} />} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='/LogIn' element={<LogIn />} />
         <Route path='/details/:name' element={<Card name={cardToSave} />} />
+        <Route path='/signup' element={<Signup/>} />
 
       </Routes>
     </Router>)

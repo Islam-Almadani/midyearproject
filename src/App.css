@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -9,19 +10,20 @@ nav {
   background: #43a846;
   color: rgb(255, 255, 255);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+
 }
 
 .link {
- color: whitesmoke;
- text-decoration :none; 
- transition-duration: 0.3s;
- border: 2px solid white;
- padding: 5px;
- border-radius: 25px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 25px;
 }
-.link:hover{
-  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+.link:hover {
+  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 120%;
   background-color: white;
   color: #43a846;
@@ -35,34 +37,39 @@ nav {
   list-style: none;
   font-size: 25px;
   color: aliceblue;
-  
+
 }
+
 .image {
   width: 400px;
   height: 350px;
   border-width: 5px;
   border-radius: 10px;
 }
-.Contact_image{
+
+.Contact_image {
   width: 50%;
   height: inherit;
   border-radius: 5%;
   margin: 5px;
 }
-.UniDiv{
-  float:left;
-  padding:10px;
-  margin-left:27px;
-  margin-top: 30px ;
-  background-color: aquamarine;
+
+.UniDiv {
+  float: left;
+  padding: 10px;
+  margin-left: 27px;
+  margin-top: 30px;
+  background-color: rgb(99, 207, 171);
   border-radius: 25px;
 }
-.h3{
+
+.h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
-.details_image{
+
+.details_image {
   width: 40%;
   height: 400px;
 
@@ -73,23 +80,26 @@ nav {
   margin-left: auto;
   margin-right: auto
 }
-.details_header{
+
+.details_header {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: xx-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: revert;
 }
-.details_li{
+
+.details_li {
   text-align: center;
   font: optional;
   font-weight: bold;
   font-size: 20px;
   margin: 5px;
   font-family: sans-serif;
-  
+
 }
-.details{
+
+.details {
   border-width: 10px;
   background-color: white;
   color: black;
@@ -103,12 +113,14 @@ nav {
   text-align: center;
   margin-left: 30%;
 }
-.details:hover{
+
+.details:hover {
   background-color: #4CAF50;
   color: white;
-  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.details_link{
+
+.details_link {
   border-width: 10px;
   background-color: white;
   color: black;
@@ -121,24 +133,124 @@ nav {
   transition-duration: 0.3s;
   text-align: center;
   margin-left: 10px;
-  
+
 }
-.details_link:hover{
+
+.details_link:hover {
   background-color: #4CAF50;
   color: white;
-  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  
+  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
 }
-#li{
+
+#li {
   color: rgb(41, 0, 0);
   list-style: none;
 }
-.input{
+
+.input {
   width: 40%;
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  align-self: center;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  transition-duration: 0.3s;
+
+}
+
+.input:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
+}
+
+.Form {
+  padding: 10px;
+}
+
+#Massage {
+  padding-bottom: 100px;
+}
+
+.Login_Icon_Img {
+  width: 50px;
+  height: initial;
+  display: inline;
+  margin-top: 10px;
+  float: right;
+}
+
+.Login_Header {
+  display: inline;
+}
+
+.Facebook {
+  border: 2px solid #ccc;
+  margin: 10px;
+  margin-right: 33%;
+  margin-left: 33%;
+  background-color: rgb(78, 167, 137);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(250, 250, 250);
+  transition-duration: 0.3s;
+
+}
+
+.Facebook:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(78, 167, 137);
+  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Google {
+  border: 2px solid #ccc;
+  margin: 10px;
+  margin-right: 33%;
+  margin-left: 33%;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(250, 250, 250);
+  background-color: rgb(78, 167, 137);
+  transition-duration: 0.3s;
+
+}
+
+.Google:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(78, 167, 137);
+  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Signup {
+  border: 2px solid #ccc;
+  margin: 10px;
+  margin-right: 33%;
+  margin-left: 33%;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 10px;
+  color: #000000;
+  background-color: rgb(78, 167, 137);
+  color: rgb(250, 250, 250);
+  text-align: center;
+  display: inline-block;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+.Signup:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(78, 167, 137);
+  box-shadow: 0 10px 12px 0 rgba(66, 66, 66, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#signup {
+  margin-left: 453px;
+  margin-top: 5px;
 }

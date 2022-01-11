@@ -13,15 +13,13 @@ class LogIn extends Component {
             {h2 : "Password" , type : 'password'},
         ]
     return(
-        thing.map((it) => { 
-            return(
-                <div className = "App">
-                    <h2>{it.h2} :</h2>
-                    <input type = {it.type} className ="input" placeholder={`Your ${it.h2}..`}/>
-                    
-                </div>
-            )
-        }))
+        <div className="App">
+                <h1 className="Facebook">Login With Facebook </h1>
+                <h1 className="Google">Login With Google </h1>
+                <Link to={`/signup`} state={thing} className="Signup" > Sign Up </Link> 
+        </div>
+        
+        )
     }
 }
 
